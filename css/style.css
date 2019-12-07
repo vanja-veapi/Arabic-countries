@@ -1,0 +1,610 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header
+{
+    color: black;
+    height: 500px;
+    width: 100%;
+    border-bottom-style: none;
+    background: url('../img/pozadina.jpg') ; /*Ako stavim fixed znaci da ce slika ostati tu gde jeste kada je */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*body
+{
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(210,6,6,1) 0%, rgba(0,0,0,1) 50%, rgba(38,167,20,1) 100%);
+}*/
+#header h1
+{
+    margin-top: 150px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 60px;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Bebas+Neue|Sulphur+Point&display=swap');
+#header h4
+{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 30px;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.logo
+{
+    background: url(../img/Logo.png);
+    height: 100px;
+    width: 150px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.logo
+{
+    /*-webkit-animation: rotate-center 1.5s ease-in-out 3 both;
+    animation: rotate-center 1.5s ease-in-out 3 both;*/
+    -webkit-animation: slide-in-blurred-top 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	animation: slide-in-blurred-top 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+/*@-webkit-keyframes rotate-center 
+{
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+}*/
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(2.5) scaleX(0.2);
+              transform: translateY(0) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+.meni
+{
+    float: right;
+    margin-top: 25px;
+    border-bottom: 1px solid black;
+    padding-bottom: 9px;
+    display: inline-block;
+}
+.meni ul ul
+{
+    display: none;
+}
+.meni ul li:hover > ul
+{
+    display: block;
+}
+.cleaner
+{
+    clear: both;
+}
+ul li a 
+{
+    padding: 10px;
+}
+ul li:hover a 
+{
+    color: white;
+    background-color: black;
+}
+ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#slike a
+{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#slike_jedan a
+{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ .belo 
+{
+    color:white;
+}
+#sredina
+{
+    font-family: sans-serif;
+    height: auto;
+    width: 100%;
+    background: lightgray;
+    background-color: rgba(211,211,211,0.4);
+    background: url(../img/islamic.png) ;
+}
+.h1
+{
+    font-family: 'Bebas Neue', cursive;
+    margin: 50px auto;
+    font-size: 30px;
+}
+.p
+{
+    font-family: 'Acme', sans-serif;
+    padding:70px;
+    margin-right: 200px;
+    margin-left: 200px;
+    color: #000b2b;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(99,148,162,1) 30%, rgba(99,148,162,1) 60%, rgba(255,255,255,0) 100%);
+
+    font-size: 30px;
+    text-align: center;
+}
+.onClickTextOverImage
+{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    transition: .3s;
+    align-items: center;
+}
+.onClickTextOverImage img
+{
+    transition:.3s;
+    border-radius:4px;
+}
+.onClickTextOverImage img
+{    
+    filter:grayscale(85%);
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#ffff;
+    transition:.3s;
+  }
+.onClickTextOverImage:hover img
+{
+    filter:blur(2px) brightness(60%);
+    filter: grayscale(0%);
+    box-shadow:10px 5px 16px #6394a2;
+    margin-top:10px;
+}
+  
+.onClickTextOverImage:hover :not(img)
+{
+    opacity:100%;
+}
+.onClickTextOverImage p
+{
+    opacity:1%;
+    font-size: 15px;
+    -webkit-text-stroke-color: white;
+    color: black;
+    text-align: center;
+    transition: .3s;
+}
+#slike
+{
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
+}
+#slike_jedan
+{
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
+}
+h1
+{
+    text-align: center;
+}
+#sredina h1
+{
+    text-shadow:5px 5px 6px #cea585;
+}
+img
+{
+    display: inline-block;
+    margin: 35px 0px 35px 0px;
+}
+#zemlje
+{
+    width: 100%;
+    height: auto;
+}
+mark
+{
+    background-color: #d5ac89;
+}
+.zemlja
+{
+    padding-bottom: 10em;
+    padding-top: 8em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
+}
+.zemlja h3
+{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.slikaz
+{
+   width: 23.2%;
+   height: 332px; 
+   border-radius: 8px;
+}
+.jedan
+{
+    background: url(../img/kaba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dva
+{
+    background: url(../img/palace.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tri
+{
+    background: url(../img/pyramid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cetiri
+{
+    background: url(../img/kuwait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pet
+{
+    background: url(../img/qatarbeach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tekstz
+{
+    font-family: 'Acme', sans-serif;
+    text-align: justify;
+    align-items: center;
+    width: 30%;
+    height: auto;
+}
+.tekstz h4
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 8px;
+}
+.tekstz p
+{
+    padding: 0.5em;
+}
+.i
+{
+    background: #000;
+    padding:30px;
+    border-radius: 50%;
+}
+footer
+{
+    color: white;
+    text-align: center;
+    border-top: 1px solid black;
+    height: auto;
+    width: 100%;
+    background-color: rgba(99,148,162,1);
+}
+#aboutMain 
+{
+    width: 80%;
+    box-sizing: border-box;
+    border: 3px solid #dfdfdf;
+    margin: 50px auto;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.5);
+    resize: both;
+    overflow: auto;
+}
+#aboutMain img
+{
+    box-shadow: 10px 5px 12px #cea585;
+    height: auto;
+    width: 100%;
+}
+#biography h2
+{
+    padding: 10px;
+}
+#profileImage
+{
+    width: 20%;
+}
+#biography
+{
+    font-size: 0.8vw;
+    font-family: 'Acme', sans-serif;
+    margin: 0.7em auto;
+    width: 70%;
+    text-align: justify;
+}
+#biography p
+{
+    font-size: 1.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#biography a
+{
+    text-decoration: none;
+}
+#fafa
+{
+    margin:0px auto;
+}
+#fafa span
+{
+    opacity: 0.8;
+    transition: 0.3s;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+#fafa span:hover
+{
+    color: #cea585;
+    opacity: 1;
+}
+#xml
+{
+    margin: 0px auto;
+}
+#xml span
+{
+    opacity: 0.8;
+    transition: 0.3s;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    display: inline-table;
+}
+#xml span:hover
+{
+    color: #cea585;
+    opacity: 1;
+}
+footer h3
+{
+    font-family: 'Bebas Neue', cursive;
+    margin: 20px;
+}
+#contact
+{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    padding: 30px;
+    justify-content: center;
+    border: 3px solid #dfdfdf;
+    background-color: rgba(255,255,255,0.5);
+}
+#form
+{
+    width: 60%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    height: auto;
+    display: contents;
+    border-bottom: 1px solid red;
+}
+.main h2
+{
+    font-family: 'Acme', sans-serif;
+}
+.kontakt
+{
+    margin: 1em auto;
+}
+#form input[type="submit"] 
+{
+    font-family: 'Acme', sans-serif;
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    border-style: 10px solid yellow;
+    color: darkgreen;
+}
+#form input[type="submit"]:hover
+{
+    border-color: red;
+    color:black
+}
+#info 
+{
+    font-family: 'Acme', sans-serif;
+    margin-top:4em;
+    display: contents;
+    width: 40%;
+    font-size: 20px;
+}
+#info h2 
+{
+    margin-bottom: 1.5em;
+    font-size: 32px;
+    text-align: center;
+}
+.main
+{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+#form form textarea
+{
+    font-family: sans-serif;
+    width: 50%;
+    height: 300px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 5px;
+    color: black;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.forma
+{
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 5px;
+    color: black;
+}
+#forma:hover
+{
+    border-color: darkgreen;
+}
+#location
+{
+    margin: 1em auto;
+}
+.galerija
+{
+    filter:grayscale(45%);
+    border: 2px solid #dfdfdf;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.5);
+}
+.galerija:hover
+{
+    filter:grayscale(0%);
+}
+#frame
+{
+    margin: 10px auto;
+    display: table;
+}
+#frame h2
+{
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+.okvir
+{
+    margin-bottom: 50px;
+    padding: 30px;
+}
