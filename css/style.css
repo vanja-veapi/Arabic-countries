@@ -417,6 +417,7 @@ footer
     background: rgba(255, 255, 255, 0.5);
     resize: both;
     overflow: auto;
+    border-radius:0.5em;
 }
 #aboutMain img
 {
@@ -500,6 +501,7 @@ footer h3
     justify-content: center;
     border: 3px solid #dfdfdf;
     background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
 }
 #form
 {
@@ -584,6 +586,7 @@ footer h3
 }
 .galerija
 {
+    border-radius: 1em;
     filter:grayscale(45%);
     border: 2px solid #dfdfdf;
     padding: 30px;
